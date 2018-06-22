@@ -1,0 +1,6 @@
+# WebServiceBase
+
+基于AFN的网络请求基类
+其中WebServiceBase只做顶层数据接收处理，不做任何数据解析；
+WebService做公共解析处理，包括错误处理等，但是数据的自定义处理不放在该层，而是放在上面的业务层service子类中，该层提供某些解析接口供子类调用
+使用时，创建WebService的子类，在子类中做数据处理。
